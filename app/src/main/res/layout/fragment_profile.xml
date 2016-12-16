@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_marvel_logo"
+            android:id="@+id/ivBackground"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/background_image_profile_height"
+            android:foreground="@color/transparent_red" />
+
+        <ImageView
+            app:srcCompat="@drawable/ic_account_circle_black_24dp"
+            android:id="@+id/ivProfile"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/ivProfile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <jhonny.marvelcomics.widgets.TradeTextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textSize="24sp"
+                android:textColor="@color/white" />
+
+            <jhonny.marvelcomics.widgets.TradeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/tvEmail"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="@dimen/card_margin_grid">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/other_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/textView5" />
+
+                        <TextView
+                            android:text="@string/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="@color/darker_gray"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:id="@+id/textView4" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_marginTop="@dimen/card_margin_grid"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                            android:textColor="@color/text_black"
+                            android:layout_width="match_parent"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvGender" />
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/bOpenFacebookProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/com_facebook_blue"
+                                android:text="@string/open_fb_profile"
+                                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_gravity="end" />
+                            <Button
+                                android:id="@+id/bLogout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/logout"
+                                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_gravity="end" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

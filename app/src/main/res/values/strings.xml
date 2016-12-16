@@ -1,0 +1,32 @@
+<resources>
+    <string name="facebook_app_id" translatable="false">1777170982608153</string>
+    <string name="app_name">Marvel comics</string>
+    <string name="marvel">MARVEL</string>
+    <string name="empty_string" translatable="false"/>
+    <string name="comics">COMICS</string>
+    <string name="refresh">Refresh</string>
+    <string name="mode">Mode</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="bushed">Bushed</string>
+    <string name="problem_loading_comics">A problem has occurred trying to get comics</string>
+    <string name="toggle_favorite">Toggle favorite</string>
+    <string name="search_by_name">Search by name…</string>
+    <string name="open_marvel_web">See in oficial page</string>
+    <string name="series">Series</string>
+    <string name="creators">Creators</string>
+    <string name="characters">Characters</string>
+    <string name="pages">%1$d pages</string>
+    <string name="login_canceled">Login canceled</string>
+    <string name="login_error">Problem to get logged in</string>
+    <string name="login_success">Login success</string>
+    <string name="logout">LOGOUT</string>
+    <string name="open_fb_profile">OPEN FACEBOOK PROFILE</string>
+    <string name="other_information">Other information</string>
+    <string name="gender">GENDER</string>
+    <string name="message_problem">There has been a problem loading comics, try refreshing by pulling down</string>
+    <string name="message_no_results">No results found, try other comic name</string>
+    <string name="message_no_favorites">You have no favorites, try adding some by clicking the star icon</string>
+</resources>

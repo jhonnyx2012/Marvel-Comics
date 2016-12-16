@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="0dp"
+        android:layout_marginBottom="@dimen/card_margin_list"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="$15.55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvPrice"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="13 DIC 2016"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDate"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:elevation="0dp"
+                    android:textColor="@color/text_gray"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp" />
+
+            </LinearLayout>
+
+            <jhonny.marvelcomics.widgets.TradeTextView
+                android:text="55 Paginas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPages"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_gray"
+                android:gravity="end" />
+
+            <jhonny.marvelcomics.widgets.TradeTextView
+                android:text="Aqui va la descripcion del comic, todo lo que esta ahi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/bOpenWebDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/open_marvel_web"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="16sp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="0dp"
+        android:layout_marginBottom="@dimen/card_margin_list"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="@string/series"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="1"
+                    android:id="@+id/tvSeriesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker_gray" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="0dp"
+        android:layout_marginBottom="@dimen/card_margin_list"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="@string/creators"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="1"
+                    android:id="@+id/tvCreatorsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker_gray" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCreators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="0dp"
+        android:layout_marginBottom="@dimen/card_margin_list"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="@string/characters"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+                <jhonny.marvelcomics.widgets.TradeTextView
+                    android:text="1"
+                    android:id="@+id/tvCharactersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker_gray" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCharacters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

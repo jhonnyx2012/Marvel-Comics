@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_margin_grid">4dp</dimen>
+    <dimen name="card_margin_list">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="comic_min_height_grid">200dp</dimen>
+    <dimen name="comic_max_height_list">300dp</dimen>
+    <dimen name="expandedTitleMargin">20dp</dimen>
+    <dimen name="shadow_detail_size">80dp</dimen>
+    <dimen name="comic_min_height_detail">350dp</dimen>
+    <dimen name="shadow_login_size">250dp</dimen>
+    <dimen name="margin_image_profile">30dp</dimen>
+    <dimen name="background_image_profile_height">300dp</dimen>
+    <dimen name="profile_image_size">150dp</dimen>
+</resources>
