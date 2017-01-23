@@ -10,7 +10,7 @@ Este app fue creado como prueba.
 * Cambio de grid a list y viceversa.
 * Posibilidad de añadir cualquier comic a tus favoritos.
 * Vista en detalle de comic estilo material design.
-* Busqueda de comic especifico desde el toolbar.
+* Búsqueda de comic especifico desde el toolbar.
 * Pantalla de perfil.
 * Pantalla de favoritos.
 * Login con facebook.
