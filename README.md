@@ -1,6 +1,6 @@
 # Marvel Comic Test #
 
-Este app fue creado como prueba.
+Aplicación que muestra y filtra comics de marvel haciendo uso de su API
 
 
 ### Características ###
@@ -15,7 +15,7 @@ Este app fue creado como prueba.
 * Pantalla de favoritos.
 * Login con facebook.
 
-### Screenshots:###
+### Screenshots ###
 
 ![Home](https://bitbucket-assetroot.s3.amazonaws.com/repository/E5xL8x/1880993973-WhatsApp%20Image%202016-12-18%20at%204.39.42%20PM.jpeg?Signature=lbeaciJY00CouEoAZV0uKzFawS0%3D&Expires=1503626380&AWSAccessKeyId=AKIAIQWXW6WLXMB5QZAQ&versionId=gYnSKGJc.Xgspo8eV__.TCuDYqISwSdM)
 
