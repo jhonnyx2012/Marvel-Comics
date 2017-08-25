@@ -2,6 +2,7 @@
 
 Aplicación que muestra y filtra comics de marvel haciendo uso de su API
 
+[DESCARGA EL DEMO AQUÍ](https://github.com/jhonnyx2012/Marvel-Comics/blob/master/appDebugDemo.apk?raw=true)
 
 ### Características ###
 
